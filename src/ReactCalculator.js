@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+
+import styles from './Styles';
 
 export default class ReactCalculator extends React.Component {
   render() {
@@ -11,17 +13,3 @@ export default class ReactCalculator extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  display: {
-    flex: 2,
-    backgroundColor: 'white',
-  },
-  input: {
-    flex: 8,
-    backgroundColor: 'black',
-  },
-});
