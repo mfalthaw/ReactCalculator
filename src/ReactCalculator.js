@@ -5,7 +5,8 @@ export default class ReactCalculator extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello, React!!!!</Text>
+        <View style={styles.display}></View>
+        <View style={styles.input}></View>
       </View>
     );
   }
@@ -14,8 +15,13 @@ export default class ReactCalculator extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  display: {
+    flex: 2,
+    backgroundColor: 'white',
+  },
+  input: {
+    flex: 8,
+    backgroundColor: 'black',
   },
 });
