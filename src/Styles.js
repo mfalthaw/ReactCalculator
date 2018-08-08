@@ -12,6 +12,22 @@ const styles = StyleSheet.create({
     flex: 8,
     backgroundColor: 'black',
   },
+  inputButton: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 0.5,
+    borderColor: 'grey',
+  },
+  inputButtonText: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  inputRow: {
+    flex: 1,
+    flexDirection: 'row',
+  },
 });
 
 export default styles;
