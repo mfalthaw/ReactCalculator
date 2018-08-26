@@ -13,6 +13,11 @@ const inputButtons = [
 ];
 
 export default class ReactCalculator extends React.Component {
+
+  _onInputButtonPressed(input) {
+    alert(input);
+  }
+
   _renderInputButtons() {
     let views = [];
     for (let r = 0; r < inputButtons.length; r++) {
@@ -20,7 +25,11 @@ export default class ReactCalculator extends React.Component {
       let inputRow = [];
       for (let i = 0; i < row.length; i++) {
         let input = row[i];
-        inputRow.push(<InputButton value={input} key={r + '-' + i}/>);
+        inputRow.push(<InputButton 
+          value={input} 
+          key={r + '-' + i}
+          onPress={this._onInputButtonPressed.bind(this, input)}
+          />);
       }
       views.push(<View style={styles.inputRow} key={'row-' + r}>{inputRow}</View>);
     }
