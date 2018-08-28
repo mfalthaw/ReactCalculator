@@ -21,7 +21,16 @@ export default class ReactCalculator extends React.Component {
   }
 
   _onInputButtonPressed(input) {
-    alert(input);
+    switch (typeof input) {
+      case 'number':
+        return this._handleNumberInput(input);
+    }
+  }
+
+  _handleNumberInput(number) {
+    this.setState({
+      inputValue: (this.state.inputValue * 10) + number,
+    });
   }
 
   _renderInputButtons() {
