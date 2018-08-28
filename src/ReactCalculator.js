@@ -85,7 +85,7 @@ export default class ReactCalculator extends React.Component {
           selectedOperator: null,
         });
         break;
-      case 'c':
+      case 'C':
         this.setState({
           previousInputValue: 0,
           inputValue: 0,
