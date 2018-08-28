@@ -27,6 +27,9 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: 'grey',
   },
+  inputButtonHilighted: {
+    backgroundColor: '#193441',
+  },
   inputButtonText: {
     fontSize: 22,
     fontWeight: 'bold',
