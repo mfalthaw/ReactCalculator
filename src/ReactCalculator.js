@@ -14,6 +14,12 @@ const inputButtons = [
 
 export default class ReactCalculator extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = { inputValue: 0 };
+  }
+
   _onInputButtonPressed(input) {
     alert(input);
   }
@@ -39,9 +45,11 @@ export default class ReactCalculator extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.display}></View>
+        <View style={styles.display}>
+          <Text style={styles.displayText}>{this.state.inputValue}</Text>
+        </View>
         <View style={styles.input}>
-        {this._renderInputButtons()}
+          {this._renderInputButtons()}
         </View>
       </View>
     );

@@ -7,6 +7,14 @@ const styles = StyleSheet.create({
   display: {
     flex: 2,
     backgroundColor: 'white',
+    justifyContent: 'center',
+  },
+  displayText: {
+    color: 'black',
+    fontSize: 38,
+    fontWeight: 'bold',
+    textAlign: 'right',
+    padding: 20,
   },
   input: {
     flex: 8,
